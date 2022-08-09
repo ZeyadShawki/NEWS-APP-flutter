@@ -27,23 +27,23 @@ void   main() {
         () async{
 
           WidgetsFlutterBinding.ensureInitialized();
-          dioHelper1.init();
-         await cachehelper.init();
-bool onboarding=cachehelper.getdata(key: 'onboarding');
-cachehelper.token=cachehelper.getdata(key: 'token');
+          Diohelper.init();
+//          await c.init();
+// bool onboarding=cachehelper.getdata(key: 'onboarding');
+// cachehelper.token=cachehelper.getdata(key: 'token');
           Widget widget;
 
-if(onboarding!=null)
-  {
-    if(cachehelper.token!=null)
-      widget=shopplayout();
-    else     widget=loginshopp();
-
-  }
-else widget=onboardingscreen();
+// if(onboarding!=null)
+//   {
+//     if(cachehelper.token!=null)
+//       widget=shopplayout();
+//     else     widget=loginshopp();
+//
+//   }
+// else widget=onboardingscreen();
 
           runApp(MyApp(
-startwidget: widget,
+startwidget: news_layout(),
           ));
     },
     blocObserver: MyBlocObserver(),
@@ -64,7 +64,7 @@ late final Widget startwidget;
           create: (BuildContext context)=>newscubit(),),
 
     BlocProvider(
-    create: (BuildContext context)=>homelayoutcubit()..gethomedata()..getcategoriesdata()..getfavoritedata()..getUSERdata(),
+    create: (BuildContext context)=>newscubit(),
   ),
 
       ],
