@@ -16,6 +16,13 @@ class newscubit extends Cubit<newsStates>
   static newscubit get(context )=>BlocProvider.of(context);
 int curentindex=0;
 
+List<String> titles=[
+  'Business News',
+  'Sports News',
+  'Science News',
+];
+
+
 List<BottomNavigationBarItem> bottomitems=[
   BottomNavigationBarItem(icon:
   Icon(

@@ -53,7 +53,7 @@ print(text);
                   },
                 ),
 
-Expanded(child: articlebuilder(list,context)),
+Expanded(child: buildarticleitem(list,context)),
 
 
 

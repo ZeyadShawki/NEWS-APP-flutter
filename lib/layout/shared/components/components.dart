@@ -5,9 +5,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:untitled/layout/shared/webview_screen.dart';
 
-import '../../modules/bmiresults/result screen.dart';
-import '../../newsapp/cubit.dart';
-import '../../newsapp/states.dart';
 
 
 Widget buildtaskitems() => Padding(
@@ -116,43 +113,6 @@ Widget buildarticleitem(article,context) =>Padding(
 
 void navigateto(context,Widget)=>Navigator.push(context, MaterialPageRoute(builder: (context) =>Widget, ) );
 
-Widget articlebuilder(list,context)=> BlocConsumer<newscubit,newsStates>(builder:(context,state)
-
-{
-
-  var list=newscubit.get(context).search;
-
-
-
-  return ListView.separated(
-
-
-
-      physics: const BouncingScrollPhysics(),
-
-      itemBuilder: (context,index)=>buildarticleitem(list[index],context),
-
-      separatorBuilder: (context,index)
-
-      {
-
-        return Divider(
-
-          color: Colors.black,
-
-        );
-
-      } , itemCount: list.length);
-
-
-
-}, listener: (context,state)
-
-{
-
-
-
-});
 
 void navigateandfinish(context,Widget)=>Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) =>Widget, ),
   (Route<dynamic> route)=> false,

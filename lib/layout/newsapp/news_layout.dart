@@ -43,7 +43,7 @@ class news_layout extends StatelessWidget {
             return Scaffold(
               appBar: AppBar(
                 title: Text(
-                  'newsapp',
+                  cubit.titles[cubit.curentindex],
 
                 ),
 
