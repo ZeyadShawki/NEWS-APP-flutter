@@ -18,3 +18,5 @@ DARK MODE
 ![20220809_175558104 1](https://user-images.githubusercontent.com/110336659/183700853-53d6dd9e-b69e-4954-9334-918dd587bee8.png)
 BROWSE THE FULL ARTICLE
 ![20220809_175557360 1](https://user-images.githubusercontent.com/110336659/183700876-7c277580-d44d-4763-bc43-99552b2aa4ee.png)
+search for article
+![Screenshot_20220721-140430_untitled](https://user-images.githubusercontent.com/110336659/183854121-478ee57f-f116-4e83-b39a-1e2155dfd285.png)
